@@ -25,7 +25,7 @@ var items = [
     {
         code: 1, //int, unique
         name: "the name of the item", //string
-        price: 10.0// float, price per item 
+        cost: 10.0// float, cost per item 
     }
 ];
 ```
