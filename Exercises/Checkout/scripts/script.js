@@ -1,4 +1,6 @@
 /**
+ * The solution looks like this, because is done using only knowledge from the first 4 chapters.
+ * 
  * Here you have access to:
  * employees,
  * items,
