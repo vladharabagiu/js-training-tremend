@@ -1,6 +1,8 @@
 # Checkout application
 
 ## Task description
+This is the task at the end of the first training/first 4 chapters.
+
 You are to build an application that simulates a shop checkout system. You must build only the application (Work in scripts/checkout.js)
 
 The app reads the requests from orders.js and from employees.js and has to process it, and return the final price.
