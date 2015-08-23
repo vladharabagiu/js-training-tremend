@@ -5,9 +5,12 @@ You are to build an application that simulates a shop checkout system. You must 
 
 The app reads the requests from orders.js and from employees.js and has to process it, and return the final price.
 
+The final price can be discounted with an employee discount. The employee discount must be between 0 and 70, if not, the final cost must be false.
+
 ## Data
 ### Employees.js
 This file provides a variable called employees, that represents the data of the employees, with the following format:
+
 ```javascript
 var employees = [
     {
@@ -18,8 +21,11 @@ var employees = [
     }
 ];
 ```
+
 ### Items.js
+
 This file provides a variable called items, representing an array of items available in the store
+
 ```javascript
 var items = [
     {
@@ -29,8 +35,10 @@ var items = [
     }
 ];
 ```
+
 ### Orders.js
 This file provides a variable called orders, representing an array of orders to be processed
+
 ```javascript
 var orders = [
     {
@@ -48,6 +56,7 @@ var orders = [
 
 ## Task
 Write the algorithm for returning an array of final_prices that represent the orders processed:
+
 ```javascript
 var final_prices = [
     {
