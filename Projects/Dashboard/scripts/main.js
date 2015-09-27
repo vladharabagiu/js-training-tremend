@@ -1,5 +1,19 @@
 var container = document.querySelector("#data");
 var list = document.createElement("ul");
+
+var masterCheckbox = document.createElement("input");
+masterCheckbox.setAttribute("type", "checkbox");
+masterCheckbox.setAttribute("class", "masterCheckbox");
+
+masterCheckbox.addEventListener("change", function() {
+    var checkboxes = document.querySelectorAll(".itemCheckbox");
+
+    for (var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = masterCheckbox.checked;
+    }
+});
+
+
 for (var i = 0; i < items.length; i++) {
     var item = items[i];
 
@@ -23,7 +37,14 @@ for (var i = 0; i < items.length; i++) {
     }
     basicDataContainer.appendChild(fileTypesContainer);
 
+    var checkboxContainer = document.createElement("li");
+    var checkbox = document.createElement("input");
+    checkbox.setAttribute("type", "checkbox");
+    checkbox.setAttribute("class", "itemCheckbox");
+    checkboxContainer.appendChild(checkbox);
+    basicDataContainer.appendChild(checkboxContainer);
     itemContainer.appendChild(basicDataContainer);
     list.appendChild(itemContainer);
 }
+container.appendChild(masterCheckbox);
 container.appendChild(list);
