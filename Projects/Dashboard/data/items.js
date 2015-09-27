@@ -72,7 +72,7 @@ var items = [
                         name: "Kraftwurks",
                         price: 50.5
                     }
-                ],
+                ]
             },
             {
                 file_id: 4,
