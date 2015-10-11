@@ -4,7 +4,7 @@
     var oldLog = console.log;
     console.log = function (message) {
         var body = document.querySelector("body");
-        var p = document.createElement("p");
+        var p = document.createElement("pre");
 
         try {
             p.textContent = (message !== undefined) ? JSON.stringify(message) : "undefined"
