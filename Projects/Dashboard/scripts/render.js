@@ -51,6 +51,8 @@ function renderCollections(collections, parentElement, button) {
   parentElement.appendChild(collContainer);
 }
 
+
+
 function renderTags(tags, parentElement, button) {
   var button = button || false;
   var tagsContainer = document.createElement("ul");
@@ -67,7 +69,15 @@ function renderTags(tags, parentElement, button) {
   }
 
   parentElement.appendChild(tagsContainer);
+//vgh-comment: new element button
+  if (button) {
+      var containerElement = createElement("div", null, {}, {});
+      var buttonElement = createElement("button", "div", {}, {textContent: "ADD NEW"});
+      tagsContainer.appendChild(buttonElement);
+  }
+  parentElement.appendChild(tagsContainer);
 }
+
 
 function renderParts(parts, parentElement) {
     var partsContainer = document.createElement("ul");
